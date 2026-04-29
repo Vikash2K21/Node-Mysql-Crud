@@ -1,3 +1,4 @@
+require("dotenv").config();
 const dotenv = require('dotenv');
 const express = require('express');
 const mySqlPool = require('./config/db');
@@ -5,7 +6,7 @@ const mySqlPool = require('./config/db');
 const app = express();
 
 //configuration 
-dotenv.config();
+
 
 // middleware
 app.use(express.json());
